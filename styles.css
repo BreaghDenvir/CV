@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+.bg-purple {
+    background-color: #6f42c1; /* Purple theme */
+}
+
+.text-purple {
+    color: #6f42c1;
+}
+
+.btn-purple {
+    background-color: #6f42c1;
+    border: none;
+}
+
+.btn-purple:hover {
+    background-color: #5a379d;
+}
+
+.header, .footer {
+    border-radius: 0.5rem;
+}
+
+.timeline-item {
+    cursor: pointer;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+    border-radius: 0.5rem;
+}
+
+.timeline-item:hover {
+    background-color: #e2e6ea;
+}
+
+.details {
+    padding: 1rem;
+    background-color: #f1f3f5;
+    border-left: 4px solid #6c757d;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.skill-badge {
+    padding: 0.75rem 1.5rem;
+    background-color: #6f42c1;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.skill-badge:hover {
+    background-color: #5a379d;
+}
+
+#skillDetails {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #d1c4e9;
+}

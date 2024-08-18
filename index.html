@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bréagh Denvir - CV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="text-center p-4 bg-dark text-white">
+        <h1>Bréagh Denvir</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a href="#objective" class="nav-link text-white">Objective</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link text-white">Education</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link text-white">Experience</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link text-white">Skills</a></li>
+                <li class="nav-item"><a href="#activities" class="nav-link text-white">Activities</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link text-white">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="objective" class="p-5 text-center bg-light">
+        <div class="container">
+            <h2>Objective</h2>
+            <p>I aim to further my education and experience in the IT world, seeking opportunities to develop my skills and contribute effectively in a dynamic environment.</p>
+        </div>
+    </section>
+
+    <section id="education" class="p-5 bg-white">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item" onclick="expandDetails('education1')">
+                    <h4>SERC COLLEGE</h4>
+                    <p>04/09/22 – PRESENT</p>
+                </div>
+                <div id="education1" class="details collapse">
+                    <p><strong>Pearson BTEC Level 3 National Extended Diploma in Information Technology (Top-Up)</strong></p>
+                    <p>Grade: Distinction, Merit, Merit</p>
+                    <p><strong>Pearson BTEC Level 3 National Foundation Diploma in Information Technology</strong></p>
+                    <p>Grade: Merit</p>
+                    <p><strong>Additional Qualifications:</strong></p>
+                    <ul>
+                        <li>OCN NI Level 2 Award in Innovation and Enterprise in Practice (Project Based Learning): Pass</li>
+                        <li>OCN NI Level 2 Certificate in Transversal Skills: Pass</li>
+                        <li>CCEA GCSE in English Language: C*</li>
+                        <li>Certificate In Essential Skills – Literacy: Pass</li>
+                    </ul>
+                </div>
+                <div class="timeline-item" onclick="expandDetails('education2')">
+                    <h4>ST MALACHY’S HIGH SCHOOL CASTLEWELLAN</h4>
+                    <p>2017 – 2022</p>
+                </div>
+                <div id="education2" class="details collapse">
+                    <ul>
+                        <li>GCSE Irish: A</li>
+                        <li>GCSE Double Award Science: C1</li>
+                        <li>GCSE Gaeilge: C*</li>
+                        <li>GCSE Mathematics: C*</li>
+                        <li>GCSE Music: C*</li>
+                        <li>GCSE Religious Studies: C*</li>
+                        <li>GCSE Spanish: C*</li>
+                        <li>GCSE Performance Skills L2: 2</li>
+                        <li>GCSE Preparation for Adult Life L2: 2</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="p-5 bg-light">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item" onclick="expandDetails('experience1')">
+                    <h4>Cleaning Assistant | Family Business</h4>
+                    <p>JUNE 2020 – SEPTEMBER 2020</p>
+                </div>
+                <div id="experience1" class="details collapse">
+                    <p>Assisted in cleaning as a summer job, which involved communicating with clients and discussing their requirements for individual sessions. This experience developed my communication and client management skills.</p>
+                </div>
+                <div class="timeline-item" onclick="expandDetails('experience2')">
+                    <h4>Production Operative | Finnebrogue Artisan</h4>
+                    <p>19/07/2021 – 23/12/2021 : 09/06/2023 – PRESENT</p>
+                </div>
+                <div id="experience2" class="details collapse">
+                    <p>In this role, I created various artisan foods on a fast-paced production line, producing a high volume of items while maintaining quality and hygiene standards. This role greatly helped me improve my time management skills, as I had to meet production targets while working efficiently with the team I was assigned to.</p>
+                </div>
+                <div class="timeline-item" onclick="expandDetails('experience3')">
+                    <h4>General Staff | Omniplex Cinema Downpatrick</h4>
+                    <p>18/08/2023 – PRESENT</p>
+                </div>
+                <div id="experience3" class="details collapse">
+                    <p>In my current role at Omniplex Cinema, I work collaboratively with others and perform a variety of tasks, including cleaning, serving customers, and maintaining the premises. This position has allowed me to further develop my customer service skills, as well as my ability to work in a team and manage multiple responsibilities simultaneously.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="p-5 bg-white">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="skill-badge m-2" onclick="showSkillDetails('skill1')">Teamwork</div>
+                <div class="skill-badge m-2" onclick="showSkillDetails('skill2')">Problem-solving</div>
+                <div class="skill-badge m-2" onclick="showSkillDetails('skill3')">Time management</div>
+                <div class="skill-badge m-2" onclick="showSkillDetails('skill4')">Proficient at learning new skills</div>
+            </div>
+            <div id="skillDetails" class="mt-3"></div>
+        </div>
+    </section>
+
+    <section id="activities" class="p-5 bg-light">
+        <div class="container">
+            <h2>Activities</h2>
+            <div class="accordion" id="activitiesAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            Downpatrick Scout Troop (10 Years)
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#activitiesAccordion">
+                        <div class="accordion-body">
+                            Organized camping trips and fundraising events to support the organization's initiatives. This experience taught me valuable leadership, planning, and teamwork skills.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            Playing Guitar (9 Years)
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#activitiesAccordion">
+                        <div class="accordion-body">
+                            I enjoy playing guitar as a creative outlet. It allows me to learn new skills and provides a way to relax and unwind after a busy day. Regular practice also helps me maintain discipline and improve my time management.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="contact" class="p-5 bg-white text-center">
+    <div class="container">
+        <h2>Contact</h2>
+        <p>If you wish to get in touch, please use the link below to send me an email:</p>
+        <a href="mailto:breaghdenvir20@gmail.com?subject=Contact%20from%20Website&body=Hi%20Breagh,%0A%0AI%20would%20like%20to%20discuss..." class="btn btn-primary">Send me an email</a>
+    </div>
+</section>
+
+
+    <footer class="text-center p-4 bg-dark text-white">
+        <p>© 2024 Bréagh Denvir | <a href="Breagh_Denvir_CV.pdf" class="text-white" download>Download CV</a></p>
+        <div>
+            <a href="https://www.linkedin.com/in/breagh-denvir-38a064297" class="text-white mx-2">LinkedIn</a>
+            <a href="https://github.com/BreaghDenvir/" class="text-white mx-2">GitHub</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
